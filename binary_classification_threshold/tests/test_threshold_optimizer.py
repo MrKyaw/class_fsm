@@ -1,39 +1,4 @@
 
-# import unittest
-# from src.threshold_selector import ThresholdSelector
-
-# class TestThresholdSelector(unittest.TestCase):
-#     def test_best_threshold_found(self):
-#         thresholds = [0.1, 0.2, 0.3, 0.4]
-#         stats = [
-#             (90, 10, 5, 5),   # recall = 0.947
-#             (85, 12, 3, 15),  # recall = 0.85
-#             (70, 20, 5, 10),  # recall = 0.875
-#             (60, 30, 2, 6)    # recall = 0.909
-#         ]
-#         selector = ThresholdSelector(thresholds, stats)
-#         self.assertEqual(selector.best_threshold(), 0.4)
-
-#     def test_no_threshold_meets_recall(self):
-#         thresholds = [0.1, 0.2]
-#         stats = [
-#             (50, 30, 10, 15),  # recall = 0.769
-#             (40, 40, 5, 20)    # recall = 0.667
-#         ]
-#         selector = ThresholdSelector(thresholds, stats)
-#         self.assertIsNone(selector.best_threshold())
-
-#     def test_precision_tiebreaker(self):
-#         thresholds = [0.1, 0.2]
-#         stats = [
-#             (90, 10, 10, 5),  # recall = 0.947, precision = 0.9
-#             (90, 10, 5, 5)    # recall = 0.947, precision = 0.947
-#         ]
-#         selector = ThresholdSelector(thresholds, stats)
-#         self.assertEqual(selector.best_threshold(), 0.2)
-
-# if __name__ == "__main__":
-#     unittest.main()
 
 import pytest
 import sys
