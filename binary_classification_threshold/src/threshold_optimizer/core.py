@@ -86,7 +86,8 @@ class ThresholdOptimizer:
         >>> best_threshold = optimizer.find_best_threshold(min_recall=0.6)
     """
     
-    def __init__(self, metrics_list: List[ClassificationMetrics]):
+    # def __init__(self, metrics_list: List[ClassificationMetrics]):
+    def __init__(self, metrics):
         """Initialize the ThresholdOptimizer with a list of classification metrics.
         
         Args:
@@ -96,8 +97,8 @@ class ThresholdOptimizer:
             ValueError: If metrics_list is empty or contains invalid data
             TypeError: If metrics_list contains non-ClassificationMetrics objects
         """
-        logger.info("Initializing ThresholdOptimizer with %d metrics", len(metrics_list))
-        self.metrics_list = metrics_list
+        logger.info("Initializing ThresholdOptimizer with %d metrics", len(metrics))
+        self.metrics_list = metrics
         self._validate_metrics()
         logger.debug("ThresholdOptimizer initialized successfully")
         
