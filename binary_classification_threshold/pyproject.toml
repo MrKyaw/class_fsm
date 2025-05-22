@@ -1,0 +1,15 @@
+
+[project]
+name = "binary_classification_threshold"
+version = "0.1.0"
+
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+__license__ = "MIT"
+__copyright__ = "Copyright (c) 2025 Kyaw Kyaw Oo"   

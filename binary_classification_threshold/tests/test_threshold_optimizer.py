@@ -1,13 +1,13 @@
 
-
+from threshold_optimizer import ClassificationMetrics, ThresholdOptimizer
 import pytest
 import sys
 import os
 
-# Add parent directory to path
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+# Add src to Python path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
 
-from src.threshold_optimizer import ClassificationMetrics, ThresholdOptimizer
+from threshold_optimizer import ClassificationMetrics, ThresholdOptimizer
 
 class TestClassificationMetrics:
     def test_recall_calculation(self):
