@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fsm-kit"
+version = "1.0.0"
+description = "Deterministic, typed finite-state-machine toolkit with guards, audit history, and Mermaid/DOT export."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Kyaw Kyaw Oo", email = "kyaw.tech@gmail.com" }]
+keywords = ["finite-state-machine", "fsm", "automata", "modulo", "mermaid", "graphviz"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-cov>=5"]
+
+[project.scripts]
+fsm-kit = "fsm_kit.__main__:main"
+
+[tool.setuptools]
+packages = ["fsm_kit"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "binary_classification_threshold/tests", "finite_state_machine/tests"]
+pythonpath = [".", "binary_classification_threshold/src", "finite_state_machine", "finite_state_machine/src"]
+addopts = "-q --strict-markers"
+
+[tool.coverage.run]
+source = ["fsm_kit"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 100
