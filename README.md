@@ -184,3 +184,8 @@ Contributions and design critiques are welcome — see [CONTRIBUTING.md](./CONTR
 [GitHub](https://github.com/MrKyaw) · [Email](mailto:kyaw.tech@gmail.com)
 
 Licensed under the MIT License. See [license.txt](./license.txt).
+
+
+⭐ Star this repo if you find it useful!
+
+Report Bug · Request Feature · Ask Question
