@@ -158,7 +158,7 @@ More: **[ARCHITECTURE.md](./ARCHITECTURE.md)** and **[docs/DESIGN_DECISIONS.md](
 
 ---
 
-## Recruiter snapshot
+## Reviewer snapshot
 
 - **Role fit:** backend/platform engineer, Python engineer, systems/automation engineer, AI-agent infrastructure.
 - **Signals:** rigorous testing (100% branch coverage), API design, deterministic systems, developer tooling, CI/CD, technical writing.
